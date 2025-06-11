@@ -1,15 +1,54 @@
-export const Form: React.FC = () => {
+import { useState } from 'react';
+
+interface RegisterData {
+    name: string;
+    email: string;
+    isOkConditions: boolean;
+    turn: string;
+    course: string;
+}
+
+const initialRegisterData: RegisterData = {
+    name: '',
+    email: '',
+    isOkConditions: false,
+    turn: '',
+    course: '',
+};
+
+export const FormC: React.FC = () => {
+    const [registerData, setRegisterData] =
+        useState<RegisterData>(initialRegisterData);
+
+    const handleSubmit: React.FormEventHandler<HTMLFormElement> = (event) => {
+        event.preventDefault();
+        console.log('Datos del formulario:', registerData);
+    };
+
+    const handleChange: React.ChangeEventHandler<
+        HTMLInputElement | HTMLSelectElement
+    > = (event) => {
+        const { name, value, type } = event.target;
+
+        setRegisterData((prevData) => ({
+            ...prevData,
+            [name]:
+                type === 'checkbox'
+                    ? (event.target as HTMLInputElement).checked
+                    : value,
+        }));
+    };
+
     return (
-        // <form onSubmit={handleSubmit}>
-        <form>
+        <form onSubmit={handleSubmit}>
             <h2>Formulario controlado</h2>
             <div className="group-control">
                 <input
                     type="text"
                     name="name"
                     placeholder="Nombre"
-                    //value={formData.name}
-                    //onChange={handleChange}
+                    value={registerData.name}
+                    onChange={handleChange}
                 />
             </div>
             <div className="group-control">
@@ -17,8 +56,8 @@ export const Form: React.FC = () => {
                     type="email"
                     name="email"
                     placeholder="Email"
-                    //value={formData.email}
-                    //onChange={handleChange}
+                    value={registerData.email}
+                    onChange={handleChange}
                 />
             </div>
 
@@ -27,8 +66,8 @@ export const Form: React.FC = () => {
                     type="checkbox"
                     name="isOkConditions"
                     id="is-ok"
-                    // checked={userData.isOkConditions}
-                    //onChange={handleChange}
+                    checked={registerData.isOkConditions}
+                    onChange={handleChange}
                 />
                 <label htmlFor="is-ok">Acepto las condiciones...</label>
             </div>
@@ -40,7 +79,7 @@ export const Form: React.FC = () => {
                     name="turn"
                     id="turno-m"
                     value="M"
-                    // onChange={handleChange}
+                    onChange={handleChange}
                 />
                 <label htmlFor="turno-m">Mañana</label>
                 <input
@@ -48,7 +87,7 @@ export const Form: React.FC = () => {
                     name="turn"
                     id="turno-t"
                     value="T"
-                    // onChange={handleChange}
+                    onChange={handleChange}
                 />
                 <label htmlFor="turno-t">Tarde</label>
                 <input
@@ -56,7 +95,7 @@ export const Form: React.FC = () => {
                     name="turn"
                     id="turno-n"
                     value="N"
-                    // onChange={handleChange}
+                    onChange={handleChange}
                 />
                 <label htmlFor="turno-n">Noche</label>
             </fieldset>
@@ -65,8 +104,8 @@ export const Form: React.FC = () => {
             <select
                 name="course"
                 id="course"
-                // value={userData.course}
-                // onChange={handleChange}
+                value={registerData.course}
+                onChange={handleChange}
             >
                 <option value=""></option>
                 <option value="A">Angular</option>
