@@ -81,4 +81,27 @@ DURACIÓN 39 horas / 3 semanas (L-J) / 12 días
 ## Día 5 (16/06)
 
 - hooks de react (continuación)
+
   - useRef
+  - design system: forwardRef
+  - useRef en React19
+
+- Custom Hooks
+
+  - Ejemplo: useToggle: basic hook with state: Tupla como retorno
+  - Ejemplo: useLocalStorage<T>: hooks y genéricos
+
+- Callbacks y Promesas. Encapsulando fetch como servicio
+  - Callbacks: funciones de orden superior
+  - Promesas
+    - Ejemplo: fetch de datos con useEffect
+    - Feature users: entity / component / hook / service
+      - Abstracción del código del componente User
+      - Tipado del hook
+      - Uso del hook en el componente
+
+## Día 6 (17/06)
+
+- Callbacks y Promesas (continuación).
+  - async/await
+  - Problemas en las dependencias de useEffect
