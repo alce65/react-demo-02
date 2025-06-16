@@ -1,4 +1,6 @@
-interface RegisterData {
+import { getDataForm } from './sample5.service';
+
+export interface RegisterData {
     name: string;
     email: string;
     isOkConditions: boolean;
@@ -13,7 +15,6 @@ const registerData: RegisterData = {
     turn: '',
     course: '',
 };
-
 
 // eslint-disable-next-line react-refresh/only-export-components
 // export const registerData: Record<string, string | boolean> = {
@@ -47,17 +48,30 @@ export const FormNC: React.FC = () => {
     const handleSubmitFD: React.FormEventHandler<HTMLFormElement> = (event) => {
         event.preventDefault();
         const form = event.currentTarget;
-        const formData = new FormData(form);
-        console.log('formData', formData);
 
-        const data: Record<string, FormDataEntryValue | boolean> = { ...registerData }
+        const data: Record<string, FormDataEntryValue | boolean> = {
+            ...registerData,
+        };
 
-        // console.log(Object.fromEntries(formData.entries()));
-        for (const [key, value] of formData) {
-            if (typeof registerData[key as keyof typeof registerData] === 'boolean') {
-                data[key] = value === 'on';
-            }
-        }
+        console.log(getDataForm(form, data));
+        // const formData = new FormData(form);
+        // console.log('formData', formData);
+
+        // const data: Record<string, FormDataEntryValue | boolean> = {
+        //     ...registerData,
+        // };
+
+        // // console.log(Object.fromEntries(formData.entries()));
+        // for (const [key, value] of formData) {
+        //     if (
+        //         typeof registerData[key as keyof typeof registerData] ===
+        //         'boolean'
+        //     ) {
+        //         data[key] = value === 'on';
+        //     } else {
+        //         data[key] = value;
+        //     }
+        // }
     };
 
     return (
