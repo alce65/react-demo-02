@@ -70,3 +70,15 @@ DURACIÓN 39 horas / 3 semanas (L-J) / 12 días
   - SOL[I]D: Interface Segregation Principle
 
 - Módulo 2
+- sobrecarga de funciones
+  - multiples firmas de función
+  - implementación única de la función
+- hooks de react
+  - useState
+  - useEffect
+  - useMemo y useCallback
+
+## Día 5 (16/06)
+
+- hooks de react (continuación)
+  - useRef
