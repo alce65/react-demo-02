@@ -105,3 +105,31 @@ DURACIÓN 39 horas / 3 semanas (L-J) / 12 días
 - Callbacks y Promesas (continuación).
   - async/await
   - Problemas en las dependencias de useEffect
+    - Ejemplo: useEffect con dependencias
+    - Solución: useCallback y useMemo
+- Hook useId
+  - Generación de IDs únicos
+  - Uso del hook en los componentes Form
+- Flux con useReducer
+  - Ejemplo: componente Contador
+  - Entidad, Acciones y reducer. Tipado
+  - Uso del hook useReducer en el componente. Funciones dispatch
+  - Test del reducer
+
+## Día 7 (18/06)
+
+- Mejoras de Flux
+  - Nombres de las acciones
+  - Action creators
+  - Reducers como diccionarios de funciones. Reducción de complejidad
+  - Incorporación de lógica asíncrona
+  - Thunks
+  - Test de los reducers
+- Modulo 3 Clases. Inyección de dependencias
+  - Introducción a las clases en TypeScript
+  - Clases y herencia
+  - Interfaces y clases abstractas
+- Componentes basados en clases
+  - Props y State. Tipado
+  - Jerarquía de componentes
+  - Ciclo de vida y Hooks en componentes de clase
