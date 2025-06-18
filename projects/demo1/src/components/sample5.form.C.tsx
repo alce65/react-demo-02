@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useId, useState } from 'react';
 
 interface RegisterData {
     name: string;
@@ -17,6 +17,13 @@ const initialRegisterData: RegisterData = {
 };
 
 export const FormC: React.FC = () => {
+
+    const isOkId = useId()
+    const turneMId = useId()
+    const turneTId = useId()
+    const turneNId = useId()
+
+
     const [registerData, setRegisterData] =
         useState<RegisterData>(initialRegisterData);
 
@@ -65,11 +72,11 @@ export const FormC: React.FC = () => {
                 <input
                     type="checkbox"
                     name="isOkConditions"
-                    id="is-ok"
+                    id={isOkId}
                     checked={registerData.isOkConditions}
                     onChange={handleChange}
                 />
-                <label htmlFor="is-ok">Acepto las condiciones...</label>
+                <label htmlFor={isOkId}>Acepto las condiciones...</label>
             </div>
 
             <fieldset name="turn">
@@ -77,27 +84,27 @@ export const FormC: React.FC = () => {
                 <input
                     type="radio"
                     name="turn"
-                    id="turno-m"
+                    id={turneMId}
                     value="M"
                     onChange={handleChange}
                 />
-                <label htmlFor="turno-m">Mañana</label>
+                <label htmlFor={turneMId}>Mañana</label>
                 <input
                     type="radio"
                     name="turn"
-                    id="turno-t"
+                    id={turneTId}
                     value="T"
                     onChange={handleChange}
                 />
-                <label htmlFor="turno-t">Tarde</label>
+                <label htmlFor={turneTId}>Tarde</label>
                 <input
                     type="radio"
                     name="turn"
-                    id="turno-n"
+                    id={turneNId}
                     value="N"
                     onChange={handleChange}
                 />
-                <label htmlFor="turno-n">Noche</label>
+                <label htmlFor={turneNId}>Noche</label>
             </fieldset>
 
             <label htmlFor="course">Elige un curso</label>
