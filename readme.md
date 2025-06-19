@@ -124,7 +124,6 @@ DURACIÓN 39 horas / 3 semanas (L-J) / 12 días
   - Reducers como diccionarios de funciones. Reducción de complejidad
   - Incorporación de lógica asíncrona
   - Thunks
-  - Test de los reducers
 - Modulo 3 Clases. Inyección de dependencias
   - Introducción a las clases en TypeScript
   - Clases y herencia
@@ -133,3 +132,21 @@ DURACIÓN 39 horas / 3 semanas (L-J) / 12 días
   - Props y State. Tipado
   - Jerarquía de componentes
   - Ciclo de vida y Hooks en componentes de clase
+
+## Día 8 (19/06)
+
+- Servicios basados en clases
+  - Nuevo proyecto: demo2
+  - Ejemplo: Repositorios. Uso de interfaces
+  - Inyección / inversión de dependencias. 
+  - Repositorios en el custom Hook
+- Context API
+  - Contexto y Provider
+
+## Dia 9 (23/06)
+
+- Context API (continuación)
+
+  - Contexto como inyector de dependencias
+  - Contexto como estado global
+  - Custom Hooks en el contexto
