@@ -1,9 +1,9 @@
 import { createContext } from "react";
 
-type ThemeState = "dark" | "light";
-type LanguageState = "es" | "en";
+export type ThemeState = "dark" | "light";
+export type LanguageState = "es" | "en";
 
-interface AppContext {
+export interface AppContext {
   theme: ThemeState;
   setTheme: React.Dispatch<React.SetStateAction<ThemeState>>;
   language: LanguageState;
@@ -12,3 +12,4 @@ interface AppContext {
 
 
 export const AppContext = createContext<AppContext>({} as AppContext);
+
