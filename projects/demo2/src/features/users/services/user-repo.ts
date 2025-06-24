@@ -1,4 +1,4 @@
-import type { Repo } from "../../core/repo";
+import type { Repo } from "../../../core/repo";
 import type { User, UserDTO } from "../types/user";
 
 export type UserRepo = Repo<User, UserDTO>;
