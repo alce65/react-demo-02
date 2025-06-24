@@ -1,14 +1,17 @@
-// import { Layout } from '../layout/layout';
-import { AppContext } from '@context/context';
+
+import { Layout } from '../layout/layout';
 import './app.css';
-import { use } from 'react';
+
 
 export const App: React.FC = () => {
-    const { title } = use(AppContext);
-
+    
     return (
         <div className="app">
-            <h1>{title}</h1>
+            <Layout>
+                <p className="app-description">
+                    This is a demo application showcasing the use of React Context for state management.
+                </p>
+            </Layout>
         </div>
     );
 };

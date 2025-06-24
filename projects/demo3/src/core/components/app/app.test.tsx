@@ -1,6 +1,6 @@
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { App } from './app';
-// import { Layout } from '../layout/layout';
+import { Layout } from '../layout/layout';
 
 
 vi.mock('../layout/layout')
@@ -13,10 +13,10 @@ describe('App Component', () => {
     // Arrange
     // Act
     render(<App />);
-    const h1Element = screen.getByRole('heading');
+    // const h1Element = screen.getByRole('heading');
     // Assert
-    expect(h1Element).toBeInTheDocument();
+    //expect(h1Element).toBeInTheDocument();
     // expect(h1Element).toHaveTextContent('Demo3');
-    // expect(Layout).toBeDefined();
+    expect(Layout).toBeDefined();
   });
 });
