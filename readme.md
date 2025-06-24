@@ -78,7 +78,7 @@ DURACIÓN 39 horas / 3 semanas (L-J) / 12 días
   - useEffect
   - useMemo y useCallback
 
-## Día 5 (16/06)
+## Día 5 (L 16/06)
 
 - hooks de react (continuación)
 
@@ -100,7 +100,7 @@ DURACIÓN 39 horas / 3 semanas (L-J) / 12 días
       - Tipado del hook
       - Uso del hook en el componente
 
-## Día 6 (17/06)
+## Día 6 (M 17/06)
 
 - Callbacks y Promesas (continuación).
   - async/await
@@ -116,7 +116,7 @@ DURACIÓN 39 horas / 3 semanas (L-J) / 12 días
   - Uso del hook useReducer en el componente. Funciones dispatch
   - Test del reducer
 
-## Día 7 (18/06)
+## Día 7 (X 18/06)
 
 - Mejoras de Flux
   - Nombres de las acciones
@@ -133,12 +133,12 @@ DURACIÓN 39 horas / 3 semanas (L-J) / 12 días
   - Jerarquía de componentes
   - Ciclo de vida y Hooks en componentes de clase
 
-## Día 8 (19/06)
+## Día 8 (J 19/06)
 
 - Servicios basados en clases
-  - Nuevo proyecto: demo2
+  - Nuevo proyecto: **demo2**
   - Ejemplo: Repositorios. Uso de interfaces
-  - Inyección / inversión de dependencias. 
+  - Inyección / inversión de dependencias.
   - Repositorios en el custom Hook
 - Context API
   - Contexto y Provider
@@ -150,3 +150,12 @@ DURACIÓN 39 horas / 3 semanas (L-J) / 12 días
   - Contexto como inyector de dependencias
   - Contexto como estado global
   - Custom Hooks en el contexto
+
+- Modulo 4. Proyectos
+  . Estructura modular de un proyecto
+  - Estructura de carpetas (scaffolding) : feature oriented
+  - Módulos ESM. Import / Export. Import types
+  - Importaciones en Vite
+- Tsconfig
+  - Alias de importación: tsconfig y Vite
+- Namespaces en TypeScript y en ESM
