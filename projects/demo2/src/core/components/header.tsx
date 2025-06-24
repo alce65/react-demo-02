@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { AppContext } from '../context/context';
+import { AppContext } from '@core/context/context';
 
 export const Header: React.FC = () => {
     const { language, setLanguage } = useContext(AppContext);
@@ -15,17 +15,7 @@ export const Header: React.FC = () => {
                 Demo 2 en <button onClick={handleClick}>{language}</button>
             </h1>
             <nav>
-                <ul>
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
-                    <li>
-                        <a href="/users">Users</a>
-                    </li>
-                    <li>
-                        <a href="/settings">Settings</a>
-                    </li>
-                </ul>
+                <p>Aquí irá el menú</p>
             </nav>
         </header>
     );

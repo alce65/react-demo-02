@@ -1,5 +1,5 @@
 import { useState, type PropsWithChildren } from 'react';
-import { AppContext, type LanguageState, type ThemeState } from './context';
+import { AppContext, type LanguageState, type ThemeState } from '@core/context/context';
 
 export const AppContextProvider: React.FC<PropsWithChildren> = ({
     children,
