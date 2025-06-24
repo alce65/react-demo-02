@@ -14,3 +14,27 @@ Copia desde uno anterior:
 - src/setupTests.ts
 - src/index.css
 - src/main.tsx
+
+### Componente inicial:
+
+- src/core/components/app.tsx
+- src/core/components/app.css
+- src/core/components/app.test.tsx
+
+Variables de entorno:
+
+- src/.env
+
+### Añadir contexto
+
+- src/context/context.tsx
+- src/context/context.test.tsx
+- src/context/context.provider.tsx
+- Incorporar valores leídos desde .env
+
+- User contexto en main.tsx
+- Acceder al contexto desde app.tsx
+
+### Añadir un layout
+
+---
