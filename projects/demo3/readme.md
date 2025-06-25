@@ -37,4 +37,10 @@ Variables de entorno:
 
 ### Añadir un layout
 
----
+- src/assets/react.svg
+- src/core/components/header
+- src/core/components/footer
+- src/core/components/layout.tsx
+- src/core/components/menu.tsx
+
+- update app.tsx para usar layout

@@ -15,7 +15,6 @@ DURACIÓN 39 horas / 3 semanas (L-J) / 12 días
 - Instalación de React + TypeScript con Vite
 - Reorganización de la demo inicial de Vite. Componente Initial
 - Instalación de Vitest y Testing Library
-
   - Prueba con un test del componente Initial
   - Test de eventos: click
 
@@ -28,16 +27,13 @@ DURACIÓN 39 horas / 3 semanas (L-J) / 12 días
 ## Día 2 (M 10/06)
 
 - Introducción a TypeScript
-
   - Tipos propios: Alias v. Interfaces
 
 - Tipado de eventos del DOM -> CounterEvent
-
   - Target y currentTarget
   - Firmas de indice (Records)
 
 - Tipado de datos en React
-
   - Entidades y DTOs
   - Utilidades de tipos en TypeScript
 
@@ -64,7 +60,6 @@ DURACIÓN 39 horas / 3 semanas (L-J) / 12 días
 - Review: función getDataForm usando FormData.
   - Uso de genericos para abstraer la función
 - Tipos unión e intersección
-
   - Tipos unión: uniones discriminadas
   - Intersección de tipos. Extensión de Interfaces
   - SOL[I]D: Interface Segregation Principle
@@ -81,15 +76,13 @@ DURACIÓN 39 horas / 3 semanas (L-J) / 12 días
 ## Día 5 (L 16/06)
 
 - hooks de react (continuación)
-
   - useRef
   - design system: forwardRef
   - useRef en React19
 
 - Custom Hooks
-
   - Ejemplo: useToggle: basic hook with state: Tupla como retorno
-  - Ejemplo: useLocalStorage<T>: hooks y genéricos
+  - Ejemplo: useLocalStorage\<T>: hooks y genéricos
 
 - Callbacks y Promesas. Encapsulando fetch como servicio
   - Callbacks: funciones de orden superior
@@ -143,10 +136,9 @@ DURACIÓN 39 horas / 3 semanas (L-J) / 12 días
 - Context API
   - Contexto y Provider
 
-## Dia 9 (23/06)
+## Dia 9 (L 23/06)
 
 - Context API (continuación)
-
   - Contexto como inyector de dependencias
   - Contexto como estado global
   - Custom Hooks en el contexto
@@ -159,3 +151,33 @@ DURACIÓN 39 horas / 3 semanas (L-J) / 12 días
 - Tsconfig
   - Alias de importación: tsconfig y Vite
 - Namespaces en TypeScript y en ESM
+
+## Día 10 (X 25/06)
+
+- Caso práctico: demo3
+  - Incorporación de un proyecto nuevo
+  - Organización feature oriented
+  - Componentes iniciales del core:
+    - App
+    - Header
+    - Footer
+- Testing unitario
+  - Test de App: Mock de componentes
+  - Test de Header y Footer: testing/Library
+- Layout y context. DI del título
+
+- React Router
+  - Instalación. Estrategias
+  - Modo declarativo. Router (Provider)
+    - Definición de rutas: componentes Routes y Route
+    - Navegación mediante urls en el navegador
+    - Organización de las rutas: componente AppRouter
+  - Menu: Link y NavLink. Iteración al crearlo
+  - Creación de las páginas. Navegación entre ellas
+  - Rutas dinámicas. Página de detalle
+    - Parámetros de ruta
+    - Navegación programática
+
+## Día 11 (J 26/06)
+
+## Día 12 (L 30/06)
