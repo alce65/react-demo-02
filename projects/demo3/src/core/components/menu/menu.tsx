@@ -1,19 +1,26 @@
 import { NavLink } from 'react-router';
 import "./menu.css";
+import type { MenuOption } from '../layout/layout';
 
-export const Menu: React.FC = () => {
+interface Props {
+    options: MenuOption[]
+}
+
+
+export const Menu: React.FC<Props> = ({options}) => {
     return (
         <nav className="menu">
             <ul>
-                <li>
-                    <NavLink to="/" >Home</NavLink>
-                </li>
-                <li>
-                    <NavLink to="/about">About</NavLink>
-                </li>
-                <li>
-                    <NavLink to="/products">Products</NavLink>
-                </li>
+                {options.map(({label, path}) => (
+                    <li key={label}>
+                        <NavLink 
+                            to={path} 
+                            // className={({ isActive }) => isActive ? "active" : ""}
+                        >
+                            {label}
+                        </NavLink>
+                    </li>
+                ))}
             </ul>
         </nav>
     );

@@ -21,3 +21,5 @@ export const ProductsDetails: React.FC = () => {
         </div>
     );
 } 
+
+export default ProductsDetails;

@@ -1,3 +1,4 @@
+import { Outlet } from 'react-router';
 import './about.css';
 
 export const About: React.FC = () => {
@@ -8,6 +9,7 @@ export const About: React.FC = () => {
                 This project demonstrates the use of TypeScript, React, Vite,
                 and Vitest.
             </p>
+            <Outlet />
         </section>
     );
 };
