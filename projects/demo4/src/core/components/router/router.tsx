@@ -33,7 +33,7 @@ export const routes: RouteObject[] = [
             {
                 path: '/product/:id',
                 lazy: {
-                    Component: async () => (await import('@products/details/product-details')).ProductsDetails,
+                    Component: async () => (await import('@products/details/product-details')).ProductDetails,
                 }
             },
             {
