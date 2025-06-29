@@ -1,9 +1,9 @@
-// import type { ProductRepository } from "@products/services/product.repo";
+import type { ProductRepository } from "@products/services/product.repo";
 import { createContext } from "react";
 
 export interface AppContext {
     title: string;
-    // productsRepo: ProductRepository
+    productsRepo: ProductRepository
 }
 
 const initialContext: AppContext = {} as AppContext;

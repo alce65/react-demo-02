@@ -1,13 +1,12 @@
 import { Link } from 'react-router';
 import './products.css';
 import type { Product } from './types/product';
-import { useEffect, useState } from 'react';
-import { InMemoryProductRepository } from './services/in-memory.product.repo';
-
-const repo = new InMemoryProductRepository();
+import { use, useEffect, useState } from 'react';
+import { AppContext } from '@context/context';
 
 export const Products: React.FC = () => {
     const [products, setProducts] = useState<Product[]>([]);
+    const { productsRepo: repo } = use(AppContext);
 
     const handleClick = (product: Product): void => {
         console.log('Product added to cart:', product);
