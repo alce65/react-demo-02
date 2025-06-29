@@ -180,4 +180,29 @@ DURACIÓN 39 horas / 3 semanas (L-J) / 12 días
 
 ## Día 11 (J 26/06)
 
+- React Router (continuación)
+  - Refactorización del menú
+  - Componente Outlet. Renderizado de rutas hijas
+  - Rutas lazy. Suspense
+  - Test de rutas lazy
+- Modo datos de React Router
+  - Clon del proyecto anterior
+  - Estrategia de datos. Rutas y router
+  - Lazy loading
+
+Pendiente de exponer
+
+- Modo datos de React Router (continuación)
+  - Test de las rutas con datos
+  - Error boundaries. Class componentes
+- Feature products
+  - Entidad y DTO. Mock de productos
+  - Repositorio de productos
+  - Inyección desde main y el contexto
+  - Página de productos
+  - Componente ProductDetail
+    - Test de los componentes
+    - Loaders en las rutas
+    - Factory de las rutas con DI
+
 ## Día 12 (L 30/06)
