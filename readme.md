@@ -198,11 +198,24 @@ Pendiente de exponer
 - Feature products
   - Entidad y DTO. Mock de productos
   - Repositorio de productos
+  - Página de productos. Repositorio en el archivo
+  - [Commit]: Add Products feature with repo service
   - Inyección desde main y el contexto
-  - Página de productos
-  - Componente ProductDetail
-    - Test de los componentes
-    - Loaders en las rutas
-    - Factory de las rutas con DI
+  - Tests
+  - [Commit]: Update Products feature with context
 
 ## Día 12 (L 30/06)
+
+- Componente ProductDetail
+  - Test de los componentes
+  - [Commit]: Update ProductDetails and test it
+- Loaders en las rutas
+  - Factory de las rutas con DI
+
+- Redux
+  - Introducción a Redux
+  - Instalación de Redux Toolkit
+  - Store y Provider
+  - Nueva feature Cart
+    - Reducers y acciones
+    - Uso de useSelector y useDispatch
