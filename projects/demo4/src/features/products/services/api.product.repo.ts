@@ -4,7 +4,7 @@ import type { ProductRepository } from './product.repo';
 const URL_BASE = import.meta.env.VITE_URL_API || 'http://localhost:3000';
 
 export class ApiProductRepository implements ProductRepository {
-    private apiProductsUrl = new URL(URL_BASE, 'products').href;
+    private apiProductsUrl = new URL('products', URL_BASE).href;
     async getProductById(id: UUID): Promise<Product> {
         const response = await fetch(`${this.apiProductsUrl}/${id}`);
         return response.json();

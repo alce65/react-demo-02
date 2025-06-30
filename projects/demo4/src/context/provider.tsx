@@ -1,16 +1,16 @@
 import { AppContext } from '@context/context';
-// import type { ProductRepository } from '@products/services/product.repo';
+import type { ProductRepository } from '@products/services/product.repo';
 
 interface Props {
     children: React.ReactNode;
     title: string;
-    // productsRepo: ProductRepository
+    productsRepo: ProductRepository
 }
 
-export const AppContextProvider: React.FC<Props> = ({ children, title }) => {
+export const AppContextProvider: React.FC<Props> = ({ children, title, productsRepo }) => {
     const context: AppContext = {
         title,
-        // productsRepo
+        productsRepo
     };
 
     return <AppContext value={context}>{children}</AppContext>;

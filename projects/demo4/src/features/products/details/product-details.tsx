@@ -1,23 +1,23 @@
-import { AppContext } from '@context/context';
-import type { Product, UUID } from '@products/types/product';
-import { use, useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router';
+
+import type { Product } from '@products/types/product';
+import { useState } from 'react';
+import { useLoaderData, useNavigate} from 'react-router';
 
 export const ProductDetails: React.FC = () => {
-    const { productsRepo: repo } = use(AppContext);
-    const { id } = useParams<{ id: string }>();
-    const [product, setProduct] = useState<Product>({} as Product);
+
+    const {product: initialProduct} = useLoaderData<{ product: Product }>();
+    const [product]  = useState<Product>(initialProduct);
     const navigate = useNavigate();
 
-    useEffect(() => {
-        repo.getProductById(id as UUID)
-            .then((data) => {
-                setProduct(data);
-            })
-            .catch((error) => {
-                console.error('Error fetching product:', error);
-            });
-    }, [id, repo]);
+    // useEffect(() => {
+    //     repo.getProductById(id as UUID)
+    //         .then((data) => {
+    //             setProduct(data);
+    //         })
+    //         .catch((error) => {
+    //             console.error('Error fetching product:', error);
+    //         });
+    // }, [id, repo]);
 
     const handleClick: React.MouseEventHandler = () => {
         navigate('/');

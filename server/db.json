@@ -18,5 +18,29 @@
             "email": "maria@acme.com",
             "role": "user"
         }
+    ],
+    "products": [
+        {
+            "id": "1-1-1-1-1",
+            "name": "Producto 1",
+            "price": 100,
+            "description": "Descripción del producto 1",
+            "category": "Categoría A"
+        },
+        {
+            "id": "2-2-2-2-2",
+            "name": "Producto 2",
+            "price": 200,
+            "description": "Descripción del producto 2",
+            "category": "Categoría B"
+        },
+        {
+            "id": "3-3-3-3-3",
+            "name": "Producto 3",
+            "price": 300,
+            "description": "Descripción del producto 3",
+            "category": "Categoría C"
+        }
     ]
+
 }
