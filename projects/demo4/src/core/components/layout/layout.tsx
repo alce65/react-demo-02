@@ -12,7 +12,8 @@ export interface MenuOption {
 const menuOptions: MenuOption[] = [ 
     {label: "Home", path: "/"},
     {label: "About", path: "/about"},
-    {label: "Products", path: "/products"}
+    {label: "Products", path: "/products"},
+    {label: "Cart", path: "/cart"},
 ]
 
 export const Layout: React.FC<PropsWithChildren> = ({ children }) => {

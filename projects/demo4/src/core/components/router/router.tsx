@@ -60,6 +60,13 @@ export const createRoutes = (repo: ProductRepository): RouteObject[] => {
                     loader: productsDetailsLoader,
                 },
                 {
+                    path: '/cart',
+                    lazy: {
+                        Component: async () =>
+                            (await import('@products/cart/cart')).Cart,
+                    },  
+                },
+                {
                     path: '*',
                     Component: () => <div>404 Not Found</div>,
                 },
